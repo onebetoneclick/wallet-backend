@@ -3,6 +3,30 @@ const {
     createRecipient
 } = require("../config/paystack");
 
+exports.getBanks = async (req, res) => {
+
+    try {
+
+        const response = await getPaystackBanks();
+
+        return res.json({
+            success: true,
+            data: response.data
+        });
+
+    } catch (error) {
+
+        return res.status(500).json({
+            success: false,
+            message:
+                error.response?.data?.message ||
+                error.message
+        });
+
+    }
+
+};
+
 /*
 |--------------------------------------------------------------------------
 | Verify Bank Account
