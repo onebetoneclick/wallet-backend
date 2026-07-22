@@ -1,15 +1,26 @@
 {
   "name": "wallet-backend",
-  "version": "1.0.0",
-  "description": "Wallet backend with Paystack DVA and withdrawal",
+  "version": "2.0.0",
+  "description": "Professional Fintech Backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
+  "keywords": [
+    "wallet",
+    "paystack",
+    "fintech",
+    "withdrawal",
+    "dva"
+  ],
+  "author": "Don Martial",
+  "license": "MIT",
   "dependencies": {
-    "axios": "^1.7.9",
+    "axios": "^1.11.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
   }
 }
