@@ -10,4 +10,6 @@ router.post("/verify", verifyBankAccount);
 
 router.post("/recipient", createTransferRecipient);
 
+router.get("/list", getBanks);
+
 module.exports = router;
