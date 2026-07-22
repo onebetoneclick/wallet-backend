@@ -1,13 +1,14 @@
 const {
     resolveAccount,
-    createRecipient
+    createRecipient,
+    getBanks
 } = require("../config/paystack");
 
 exports.getBanks = async (req, res) => {
 
     try {
 
-        const response = await getPaystackBanks();
+        const response = await getBanks();
 
         return res.json({
             success: true,
