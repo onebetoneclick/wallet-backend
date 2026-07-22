@@ -44,8 +44,6 @@ app.use("/api/bank", require("./routes/bank"));
 
 app.use("/api/withdraw", require("./routes/withdrawal"));
 
-app.use("/api/dva", require("./routes/dva"));
-
 /*
 |--------------------------------------------------------------------------
 | 404 Route
